@@ -30,7 +30,7 @@ jobs:
 
       - name: Clone BPB workjs
         run: |
-          wget -O origin.js https://raw.gitmirror.com/bia-pain-bache/BPB-Worker-Panel/refs/heads/main/build/unobfuscated-worker.js
+          wget -O origin.js https://release-assets.githubusercontent.com/github-production-release-asset/745612559/197f4dd0-b58b-400c-9c13-d64a40e881e7?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-07-31T13%3A44%3A28Z&rscd=attachment%3B+filename%3Dworker.js&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-07-31T12%3A43%3A31Z&ske=2025-07-31T13%3A44%3A28Z&sks=b&skv=2018-11-09&sig=RtwCcbKP9yakfBtcHZxoO8PzliW2mITqnitqWeEZUAg%3D&jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1Mzk2Njc5OSwibmJmIjoxNzUzOTY2NDk5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.KAGjDZ299ERpzpiHC0QuF4vXlSRTKl-Dh7tcqy4vpJE&response-content-disposition=attachment%3B%20filename%3Dworker.js&response-content-type=application%2Foctet-stream
       - name: Obfuscate BPB worker js
         run: |
           javascript-obfuscator origin.js --output _worker.js \
